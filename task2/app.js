@@ -9,8 +9,11 @@ popupBtn.addEventListener('click', () =>{
 
 popupClosed.addEventListener('click', () => popup.classList.remove('popup-on'));
 
+
+
 document.addEventListener('click', (event) =>{
-    if(event.target !== popupContent && event.target !==popupBtn){
+    if(event.target === popup){
         popup.classList.remove('popup-on');
     }
+
 });

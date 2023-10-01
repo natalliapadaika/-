@@ -4,26 +4,22 @@
   box-sizing: border-box;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-}
-.container .menu {
+.menu {
   background: rgb(27, 26, 26);
   width: 0px;
   min-height: 100%;
-  position: relative;
+  position: fixed;
   overflow-x: hidden;
 }
-.container .menu.menu-closed {
+.menu.menu-closed {
   transition: 0.5s;
   width: 0px;
 }
-.container .menu.menu_main-btn-on {
-  width: 300px;
+.menu.menu_main-btn-on {
+  width: 250px;
   transition: 0.8s;
 }
-.container .menu .btn-closed {
+.menu .btn-closed {
   width: 20px;
   height: 30px;
   background: white;
@@ -33,42 +29,34 @@
   right: 20px;
   font-weight: bold;
 }
-.container .menu nav {
+.menu nav {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 100px;
 }
-.container .menu nav ul {
+.menu nav ul {
   list-style: none;
 }
-.container .menu nav ul li {
+.menu nav ul li {
   margin-bottom: 30px;
 }
-.container .menu a {
+.menu a {
   text-decoration: none;
   color: gray;
   font-size: 26px;
   font-weight: 500;
 }
 
-.hero {
-  display: flex;
-  gap: 30px;
-  min-height: 100vh;
-}
-.hero .main {
+.main {
   text-align: left;
   padding-top: 10px;
+  padding-left: 20px;
 }
-.hero.main-btn-on {
-  margin-left: 300px;
+.main.main-btn-on {
+  margin-left: 260px;
 }
-.hero .main h1 {
+.main h1 {
   margin-bottom: 20px;
-  padding-left: 10px;
-}
-.hero p {
-  padding-left: 10px;
 }
 
 .main_btn-menu {
